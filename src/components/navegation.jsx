@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../components/chartStyles.css';
+import './graphs/chartStyles.css'
 import { faHome, faExclamationTriangle, faExclamationCircle, faUsers, faUser } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -27,13 +27,6 @@ class Navegation extends React.Component{
             <a href="nombreusuario"><FontAwesomeIcon icon={faUser} /> Nombre Usuario</a>
           </nav>
         </div>
-
-        <div className="section section2">
-          <p>Estadísticas de registro de actos y condiciones inseguras</p>
-        </div>
-
-
-
       </div>
     );
   }

@@ -31,15 +31,13 @@ export const LineGraph2 =()=>{
     const options ={
         scales:{
             x: {
-                display: false, // Oculta las líneas de la escala x
+                display: false, 
               },
               y: {
-                display: false, // Oculta las líneas de la escala y
+                display: false, 
               },
         }
     };
-
-
     const data={
  
 

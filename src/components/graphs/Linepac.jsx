@@ -31,16 +31,15 @@ export const LineGraph1 =()=>{
     const options ={
         scales:{
             x: {
-                display: false, // Oculta las líneas de la escala x
+                display: false, 
               },
               y: {
-                display: false, // Oculta las líneas de la escala y
+                display: false, 
               },
         }
     };
 
-
-    const data={
+ const data={
  
 
         labels: ['Físicos','Químicos','Biologicos','Biomecánicos','Psicosocial','Condiciones de Seguridad','Eléctrico','Mecánicos'],

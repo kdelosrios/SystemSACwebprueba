@@ -1,33 +1,34 @@
 import './App.js';
-import {LineGraph} from './components/graphs/Linetac.jsx'
-import { LineGraph1 } from './components/graphs/Linepac.jsx';
-import { LineGraph2 } from './components/graphs/Lineaac.jsx';
-import Navegation from './components/navegation';
-import './components/chartStyles.css'
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './components/home.js';
+import Navegation from './components/navegation.jsx';
+import './components/graphs/chartStyles.css'
+import Register from './components/forms/register.jsx';
+import ActsForm from './components/forms/actsForm.jsx';
+import ConditionForm from './components/forms/conditionsform.jsx';
+import Usuarios from './components/userTable.jsx';
 
 
 function App() {
   return (
-    <div className="App">
-     
-      <div class name="colum">
-      <Navegation/>
-      </div>
-     
-      <div class name="colum">
-      <LineGraph/>
-      </div>
-      
-      <div class name="colum">
-      <LineGraph1/>
-      </div>
-      
-      <div class name="colum">
-      <LineGraph2/>
-      </div>
     
-    </div>
+    <div className="App" >
+      <Navegation /> 
+    
+    <BrowserRouter>
+    <Routes>
+      
+      <Route path='/Home' element={<Home/>}></Route>
+      <Route path="/registro" element={<Register />} />
+      <Route path="/registro_actos" element={<ActsForm />} />
+      <Route path="/registro_condiciones" element={<ConditionForm />} />
+      <Route path="/usuarios" element={<Usuarios />} />
 
+    
+      </Routes>
+    </BrowserRouter>
+    
+     </div>
       
 
   );
