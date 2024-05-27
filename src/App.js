@@ -37,4 +37,4 @@ function App() {
 export default App;
 
 
-/*se relaiza prueba para el git*/
+/*se relaiza prueba para el git para verificar la carga de informaicón en git*/
